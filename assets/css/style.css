@@ -48,7 +48,7 @@ body{
 }
 .faq::before{
  content: "";
- background: url('/assets/images/illustration-woman-online-mobile.svg') no-repeat;
+ background: url('assets/images/illustration-woman-online-mobile.svg') no-repeat;
  width: 300px;
  height: 180px;
  position: absolute;
@@ -58,7 +58,7 @@ body{
 }
 .faq::after{
  content: "";
- background: url('/assets/images/bg-pattern-mobile.svg') no-repeat;
+ background: url('assets/images/bg-pattern-mobile.svg') no-repeat;
  width: 240px;
  height: 104px;
  position: absolute;
@@ -160,12 +160,12 @@ body{
     padding: 20px 100px 50px 30px;
     flex-basis: 450px;
     max-width: 900px;
-    background: url(/assets/images/illustration-woman-online-desktop.svg) bottom 85px left -90px no-repeat,
-    url(/assets/images/bg-pattern-desktop.svg) bottom -130px left -590px no-repeat;
+    background: url(assets/images/illustration-woman-online-desktop.svg) bottom 85px left -90px no-repeat,
+    url(assets/images/bg-pattern-desktop.svg) bottom -130px left -590px no-repeat;
     background-color: white;
   }
   .faq::before{
-    background: url('/assets/images/illustration-box-desktop.svg') no-repeat;
+    background: url('assets/images/illustration-box-desktop.svg') no-repeat;
     width: 300px;
     height: 180px;
     position: absolute;
