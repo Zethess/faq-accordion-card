@@ -48,7 +48,7 @@ body{
 }
 .faq::before{
  content: "";
- background: url('assets/images/illustration-woman-online-mobile.svg') no-repeat;
+ background: url('../images/illustration-woman-online-mobile.svg') no-repeat;
  width: 300px;
  height: 180px;
  position: absolute;
@@ -58,7 +58,7 @@ body{
 }
 .faq::after{
  content: "";
- background: url('assets/images/bg-pattern-mobile.svg') no-repeat;
+ background: url('../images/bg-pattern-mobile.svg') no-repeat;
  width: 240px;
  height: 104px;
  position: absolute;
@@ -93,8 +93,7 @@ body{
   border: none;
   cursor: pointer;
   width: 20px;
- 
-  transition: transform 0.5s ease; /* Agregamos una transición suave */
+  transition: transform 0.1s ease; /* Agregamos una transición suave */
 }
 .question-paragraph{
   color: var(--dark-grayish-blue);
@@ -104,10 +103,15 @@ body{
   display: none;
 }
 .closeAnimation {
-  animation: closeAnimation 0.3s forwards ;
+  max-height: 0px;
+  display: none;
+  opacity: 0;
 }
 .showAnimation {
-  animation: openAnimation 0.9s forwards;
+  display: block;
+    max-height: 400px;
+    opacity: 1;
+    margin-bottom: 20px;
 }
 .question-title p:hover{
   cursor: pointer;
@@ -121,7 +125,7 @@ body{
     transform: translate(-38%, -61% );
   }
 }
-@keyframes closeAnimation {
+/* @keyframes closeAnimation {
   0%{
     max-height: 400px;
     margin-bottom: 20px;
@@ -148,9 +152,9 @@ body{
     max-height: 400px;
     opacity: 1;
   }
-}
+} */
 .rotated {
-  transition: transform 0.5s ease; 
+
   transform: rotate(180deg);
 }
 @media screen and (min-width: 800px){
@@ -160,12 +164,12 @@ body{
     padding: 20px 100px 50px 30px;
     flex-basis: 450px;
     max-width: 900px;
-    background: url(assets/images/illustration-woman-online-desktop.svg) bottom 85px left -90px no-repeat,
-    url(assets/images/bg-pattern-desktop.svg) bottom -130px left -590px no-repeat;
+    background: url(../images/illustration-woman-online-desktop.svg) bottom 85px left -90px no-repeat,
+    url(../images/bg-pattern-desktop.svg) bottom -130px left -590px no-repeat;
     background-color: white;
   }
   .faq::before{
-    background: url('assets/images/illustration-box-desktop.svg') no-repeat;
+    background: url('../images/illustration-box-desktop.svg') no-repeat;
     width: 300px;
     height: 180px;
     position: absolute;
