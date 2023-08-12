@@ -45,6 +45,7 @@ body{
   border-radius: 30px;
   padding: 90px 30px 50px 30px;
   position: relative;
+  margin-top: 70px; 
 }
 .faq::before{
  content: "";
